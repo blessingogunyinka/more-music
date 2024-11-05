@@ -1,0 +1,306 @@
+
+
+.my-playlists-page-main-container {
+    display: flex ; 
+    flex-direction: column ; 
+    align-items: center ;
+    justify-content: flex-start ;
+    gap: 50px ; 
+    margin-bottom: 100px ; 
+}
+
+.my-playlists-page-my-playlists-text {
+    margin-top: 85px ; 
+    font-size: 4cqw ;
+}
+
+.my-playlists-page-create-new-playlist {
+    background-color: rgb(239, 243, 244) ;
+    padding: 3px ; 
+    border: 0.5px solid rgb(33, 53, 71) ; /* #213547 */
+    border-radius: 5px ; 
+    cursor: pointer ;
+    transition: 0.1s ; 
+}
+
+.my-playlists-page-create-new-playlist:hover {
+    filter: drop-shadow(0 0 0.5em rgb(130, 248, 248, 0.9) ) ; 
+}
+
+.my-playlists-page-create-new-playlist-form-container {
+
+}
+
+.my-playlists-page-create-new-playlist-form {
+    margin-bottom: 15px ; 
+    display: flex ; 
+    flex-direction: column ;
+    gap: 15px ; 
+}
+
+.my-playlists-page-create-new-playlist-form-input-name {
+    background-color: rgb(239, 243, 244) ; 
+	transition-duration: 0.2s ; 
+	border: 0px ; 
+	border-radius: 5px ; 
+	padding-left: 10px ;
+	padding-right: 10px ; 
+	color: #213547 ;
+    width: 300px ; 
+    height: 30px ; 
+    font-family: 'proxima_nova_rgregular' ; 
+    margin-top: -25px ; 
+}
+
+.my-playlists-page-create-new-playlist-form-input-name:disabled {
+    color: rgb(84, 84, 84) ; 
+}
+
+
+.my-playlists-page-form-error-message {
+    padding: 0px ; 
+    color: red ;  
+    text-align: center ;
+}
+
+.my-playlists-page-create-new-playlist-form-input-description {
+    background-color: rgb(239, 243, 244) ; 
+	transition-duration: 0.2s ; 
+	border: 0px ; 
+    padding-left: 10px ;
+	padding-right: 10px ;
+    width: 300px ; 
+    height: 30px ;
+    border-radius: 5px ; 
+    font-family: 'proxima_nova_rgregular' ; 
+    resize: vertical ; 
+}
+
+
+.my-playlists-page-create-new-playlist-form-input-name:focus,
+.my-playlists-page-create-new-playlist-form-input-description:focus {
+    outline: 0.5px solid rgb(130, 248, 248, 0.8) ; 
+}
+
+.my-playlists-page-create-new-playlist-submit-button {
+    padding: 2px ; 
+    border: 0.5px solid rgb(33, 53, 71) ;
+    border-radius: 8px ; 
+    cursor: pointer ; 
+    margin-top: -35px ; 
+}
+
+
+.my-playlists-page-create-new-playlist-submit-status-success,
+.my-playlists-page-create-new-playlist-submit-status-failed {
+
+}
+
+.my-playlists-page-create-new-playlist-submit-status-success {
+    color: rgb(31, 255, 39) ; 
+    margin-top: -32px ; 
+}
+
+.my-playlists-page-create-new-playlist-submit-status-failed {
+    color: red ; 
+    margin-top: -32px ;
+}
+
+.my-playlists-page-create-new-playlist-clear-form {
+    padding: 2px ; 
+    border: 0.5px solid rgb(33, 53, 71) ;
+    border-radius: 8px ; 
+    cursor: pointer ; 
+    margin-top: -25px ; 
+    margin-bottom: -18px ;
+}
+
+
+.my-playlists-page-playlists-container {
+    width: max-content ; 
+    max-width: 57% ;
+    display: flex ; 
+    flex-direction: row ;
+    align-items: flex-start ;
+    justify-content: center ;
+    flex-wrap: wrap ;
+    gap: 35px ; 
+    padding: 10px ; 
+    border-radius: 40px ;
+}
+
+.my-playlists-page-login-or-signup-text {
+    margin-top: 85px ; 
+    font-size: 4cqw ;
+}
+
+
+.my-playlists-page-playlist-square-container {
+    position: relative ; 
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+}
+
+
+.my-playlists-page-playlist-square {
+    background-color: azure ; 
+    border: 0.5px solid rgb(33, 53, 71) ;  
+    height: 230px ; 
+    width: 230px ;
+    padding: 10px ; 
+    border-radius: 20px ;
+
+    display: flex ; 
+    flex-direction: column ;
+    align-items: center ;
+    justify-content: center ;
+    text-align: center ;
+    transition: 0.2s ;
+    position: relative ; 
+    cursor: pointer ; 
+}
+
+.my-playlists-page-playlist-square:hover {
+    background-color: rgb(202, 248, 248) ;
+}
+
+.my-playlists-page-playlist-square-playlist-name {
+    font-size: 20px ; 
+}
+
+.my-playlists-page-playlist-square-delete-playlist-icon {
+    position: absolute ; 
+    top: 10px ; 
+    right: 10px ; 
+    transition: 0.2s ; 
+    font-size: 15px ;  
+    cursor: pointer ;
+}
+
+
+.my-playlists-page-playlist-square-delete-playlist-icon:hover {
+    fill: red ; 
+}
+
+.my-playlists-page-playlist-square-delete-playlist-icon:hover 
+~ .my-playlists-page-playlist-square:hover {
+    background-color: azure ;
+}
+
+.my-playlists-page-playlist-square-delete-playlist-icon-hover-modal {
+    visibility: hidden ;
+
+    background-color: rgba(70, 70, 70, 0.9) ;
+    position: absolute ; 
+    top: -20px ;  
+    right: 0px ; 
+    padding: 5px ;
+    border-radius: 10px ;
+    color: white ; 
+    z-index: 1 ;
+    transition: 0.1s ;
+}
+
+.my-playlists-page-playlist-square-delete-playlist-icon:hover 
+~.my-playlists-page-playlist-square-delete-playlist-icon-hover-modal {
+    visibility: visible ;
+}
+
+
+.my-playlists-page-playlist-square-edit-playlist-button {
+    padding: 3px ; 
+    padding-right: 8px ; 
+    padding-left: 8px ;
+
+    border: 0.5px solid rgb(33, 53, 71) ; 
+    border-radius: 5px ; 
+    cursor: pointer ;
+    bottom: 9px ; 
+    position: absolute ; 
+}
+
+.my-playlists-page-playlist-square-edit-playlist-button:hover {
+    background-color: rgb(202, 248, 248) ;
+}
+
+.my-playlists-page-playlist-square-edit-playlist-button:hover
+~ .my-playlists-page-playlist-square:hover {
+    background-color: azure ;
+}
+
+
+.my-playlists-page-edit-playlist-form {
+    margin-bottom: 15px ; 
+    display: flex ; 
+    flex-direction: column ;
+    gap: 15px ; 
+}
+
+.my-playlists-page-edit-playlist-form-input-name {
+    background-color: rgb(239, 243, 244) ; 
+	transition-duration: 0.2s ; 
+	border: 0px ; 
+	border-radius: 9999px ; 
+	padding-left: 10px ;
+	padding-right: 10px ; 
+	color: #213547 ;
+    width: 300px ; 
+    height: 30px ; 
+    font-family: 'proxima_nova_rgregular' ; 
+    margin-top: -25px ; 
+}
+
+.my-playlists-page-edit-playlist-form-input-description {
+    background-color: rgb(239, 243, 244) ; 
+	transition-duration: 0.2s ; 
+	border: 0px ; 
+    padding-left: 10px ;
+	padding-right: 10px ;
+    width: 300px ; 
+    height: 30px ;
+    border-radius: 5px ; 
+    font-family: 'proxima_nova_rgregular' ; 
+    resize: vertical ;
+}
+
+.my-playlists-page-more-music-logo {
+    height: 75px ; 
+    position: absolute ;     
+    left: 7.5px ; 
+    top: 8px ;
+}
+
+.my-playlists-page-more-music-logo:hover {
+    filter: drop-shadow(0 0 1em rgb(130, 248, 248, 0.8)) ;
+}
+
+
+.my-playlists-page-nav-buttons-stack {
+    display: flex ; 
+    flex-direction: column ; 
+    align-items: center ;
+    justify-content: flex-start ;
+    position: absolute ; 
+    right: 5px ; 
+    top: 10px ;
+}
+
+.my-playlists-page-nav-buttons-stack p {
+    margin: 5px ; 
+    padding: 10px ; 
+    background-color: rgb(239, 243, 244) ; 
+    border-radius: 15px ;
+    width: 60px ; 
+    text-align: center ;
+    color: #213547 ;
+}
+    
+.my-playlists-page-nav-buttons-stack a {
+    text-decoration: none ;
+}
+
+.my-playlists-page-nav-buttons-stack p:hover {
+    cursor: pointer ;
+    filter: drop-shadow(0 0 0.5em rgb(130, 248, 248, 0.8) ) ;
+}

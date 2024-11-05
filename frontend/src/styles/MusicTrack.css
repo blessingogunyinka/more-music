@@ -1,0 +1,540 @@
+a {
+    all: unset ; 
+}
+
+.music-track-stack-container-router-link {
+
+}
+
+.music-track-main-container {
+    display: flex ;
+    flex-direction: column ;
+    align-items: center ;
+    justify-content: center ;
+    background-color: red ;
+    z-index: 9999 ;
+}
+
+.music-track-stack-container {
+    display: flex ; 
+    flex-direction: row ;
+    align-items: center ;
+    justify-content: flex-start ;
+    gap: 10px ; 
+    border-radius: 15px ;
+    background-color: rgb(240, 255, 255) ;
+    height: 90px ; 
+    width: 100% ; 
+    flex-shrink: 0 ;
+    overflow: auto ; 
+    position: relative ;
+    transition: 0.2s ;
+    padding-right: 1.5px ; 
+    cursor: pointer ;
+}
+
+.music-track-stack-container:hover {
+    background-color: rgb(202, 248, 248) ;
+}
+
+
+.music-track-list-number, 
+.music-track-album, .music-track-length,
+.music-track-name {
+    overflow: hidden ; 
+    white-space: nowrap ; 
+    text-overflow: ellipsis ;
+}
+
+.music-track-name:hover, .music-track-explicitness:hover, 
+.music-track-artists:hover, .music-track-album:hover,
+.music-track-length:hover {
+
+}
+
+.music-track-list-number {
+    width: 5% ;
+    text-align: center ;
+}
+
+
+.music-track-title-container {
+    display: flex ; 
+    flex-direction: row ; 
+    align-items: center ;
+    justify-content: flex-start ;
+    width: 48% ;
+    gap: 10px ; 
+    overflow: auto ; 
+}
+
+.music-track-artwork-container {
+    display: flex ;
+    align-items: center ; 
+    justify-content: center ;
+    margin: 0px ;
+}
+
+.music-track-artwork {
+    height: 37px ; 
+    width: 37px ;
+    border-radius: 4px ; 
+}
+
+.music-track-title-stack {
+    display: flex ; 
+    flex-direction: column ;
+    align-items: flex-start ;
+    justify-content: flex-start ;
+    height: 40px ;
+    overflow: hidden ;
+    white-space: nowrap ; 
+    text-overflow: ellipsis ;
+}
+
+.music-track-title-stack {
+    display: -webkit-box ; 
+    -webkit-line-clamp: 1 ; 
+    -webkit-box-orient: vertical ; 
+    white-space: unset ; 
+    word-break: break-all ; 
+    overflow: hidden ; 
+    text-overflow: ellipsis ;
+}
+
+.music-track-name {
+
+}
+
+
+.music-track-explicitness-and-artist-stack {
+    display: flex ; 
+    flex-direction: row ; 
+    justify-content: flex-start ; 
+    align-items: center ;
+    background-color: yellowgreen ;
+    max-height: 20px ;    
+}
+
+.music-track-explicitness-and-artist-stack {
+    display: -webkit-box ; 
+    -webkit-line-clamp: 1 ; 
+    -webkit-box-orient: horizontal ; 
+    white-space: unset ; 
+    word-break: break-all ; 
+    overflow: hidden ; 
+    text-overflow: ellipsis ;
+}
+
+.music-track-explicitness {
+    background-color: hsla(0,0%,100%,.6) ;
+    border-radius: 2px ; 
+    width: 17px ; 
+    height: 17px ; 
+
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    border: 0.25px solid #121212 ;  
+}
+
+
+.music-track-explicitness span {
+    color: #121212 ; 
+    font-size: 10px ; 
+}
+
+
+.music-track-artists {    
+    position: relative ; 
+    overflow: hidden ; 
+    white-space: nowrap ; 
+    text-overflow: ellipsis ;
+}
+
+.music-track-album {
+    width: 33% ; 
+}
+
+.music-track-length {
+    width: 10% ;
+    display: flex ; 
+}
+
+.music-track-add-to-playlist-options-button,
+.music-track-remove-from-playlist-button {
+    width: 4% ; 
+    text-align: center ;
+    color: rgb(50, 50, 50) ;
+    border-radius: 15px ;
+    transition: 0.2s ; 
+    cursor: pointer ;
+}
+
+.music-track-add-to-playlist-options-button:hover,
+.music-track-remove-from-playlist-button:hover {
+    background-color: snow ;
+}
+
+.music-track-remove-from-playlist-delete-icon {
+     
+}
+
+.music-track-remove-from-playlist-delete-icon:hover {
+    fill: orangered ;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.music-track-playlist-options {
+    /* background-color: yellow ; */
+    display: flex ; 
+    flex-direction: column ; 
+    align-items: center ;
+    justify-content: flex-start ;
+    gap: 25px ;
+    /* gap: 120px ; */
+    /* gap: 6cqw ;  */
+
+    max-width: 100% ; 
+
+    /* overflow-x: scroll ;  */
+    overflow: scroll ; 
+}
+
+
+.music-track-playlist-options-add-to-playlist-buttons {
+    display: flex ; 
+    flex-direction: row ; 
+    align-items: flex-start ;
+    justify-content: space-around ;
+
+    gap: 50px ;
+}
+
+
+.music-track-playlist-options-add-to-existing-playlist-container,
+.music-track-playlist-options-create-new-playlist-container {
+    display: flex ; 
+    flex-direction: column ;
+    align-items: flex-start ;
+    align-items: center ;
+    justify-content: flex-start ;
+
+    gap: 10px ; 
+
+}
+
+.music-track-playlist-options-add-to-existing-playlist-button,
+.music-track-playlist-options-create-new-playlist-button,
+.music-track-playlist-options-add-to-existing-playlist-button-selected,
+.music-track-playlist-options-create-new-playlist-button-selected {
+    padding: 3px ; 
+    border: 0.5px solid rgb(33, 53, 71) ;
+    border-radius: 5px ; 
+    
+    /* #f0ffff */
+    /* background-color: azure ;  */
+
+    background-color: white ; 
+    transition: 0.2s ;
+
+    cursor: pointer ; 
+}
+
+.music-track-playlist-options-add-to-existing-playlist-button:hover,
+.music-track-playlist-options-create-new-playlist-button:hover {
+    /* background-color: rgb(202, 248, 248) ; */
+}
+
+
+.music-track-playlist-options-add-to-existing-playlist-button-selected,
+.music-track-playlist-options-create-new-playlist-button-selected {
+    cursor: pointer ; 
+    background-color: rgb(202, 248, 248) ;
+}
+
+.music-track-playlist-options-add-to-existing-playlist-button-selected:hover,
+.music-track-playlist-options-create-new-playlist-button-selected:hover {
+
+}
+
+
+.music-track-playlist-options-add-to-existing-playlist-form {
+    display: flex ; 
+    flex-direction: column ;
+    align-items: flex-start ; 
+    justify-content: flex-start ;
+
+    gap: 5px; 
+
+    padding: 3px ; 
+    border: 0.5px solid rgb(33, 53, 71) ;
+    border-radius: 5px ; 
+
+    max-height: 150px ; 
+    overflow-y: scroll ;
+
+    /* width: 250px ;  */
+}
+
+
+.music-track-playlist-options-add-to-existing-playlist-form > label > input {
+    float: left ; 
+}
+
+.music-track-playlist-options-add-to-existing-playlist-form input {
+    float: left ; 
+}
+
+.music-track-playlist-options-add-to-existing-playlist-form div {
+    
+}
+
+input[type="radio"] {
+    /* visibility: hidden ;
+    position: absolute ; 
+    height: 0px ;
+    width: 0px ;  */
+}
+
+/* label:has(> input[type="radio"]:checked) {
+    background-color: rgb(202, 248, 248) ;
+} */
+
+
+.music-track-playlist-options-add-to-existing-playlist-form label {
+    margin-left: 25px ; 
+    display: block ; 
+
+    /* border: 0.5px solid rgb(33, 53, 71) ;
+    border-radius: 8px ;
+    padding: 2px ;  */
+
+    /* transition: 0.2s ; */
+
+}
+
+.music-track-playlist-options-add-to-existing-playlist-form label:hover {
+    /* background-color: azure ;
+    cursor: pointer ; */
+}
+
+
+
+.music-track-playlist-options-add-to-existing-playlist-selections {
+    display: flex ; 
+    flex-direction: column ;
+    align-items: flex-start ; 
+    justify-content: flex-start ;
+
+    gap: 7px; 
+
+    padding: 10px ; 
+    border: 0.5px solid rgb(33, 53, 71) ;
+    border-radius: 8px ; 
+
+    max-height: 150px ; 
+    overflow-y: scroll ;
+
+    max-width: 250px ; 
+}
+
+.music-track-playlist-options-add-to-existing-playlist-selections > div:first-child {
+    align-self: center ;
+}
+
+
+
+
+/* .music-track-playlist-options-add-to-existing-playlist-selections > div {
+    background-color: white ;
+
+    padding: 2px ; 
+    border: 0.5px solid rgb(33, 53, 71) ;
+    border-radius: 8px ; 
+
+    transition: 0.2s ; 
+} */
+
+
+/* .music-track-playlist-options-add-to-existing-playlist-name,
+.music-track-playlist-options-add-to-existing-playlist-name-selected {
+    background-color: white ;
+
+    padding: 2px ; 
+    border: 0.5px solid rgb(33, 53, 71) ;
+    border-radius: 8px ; 
+
+    transition: 0.2s ; 
+
+    cursor: pointer ;
+}
+
+.music-track-playlist-options-add-to-existing-playlist-name:hover {
+
+}
+
+.music-track-playlist-options-add-to-existing-playlist-name-selected {
+    background-color: rgb(202, 248, 248) ;
+    cursor: pointer ; 
+}
+
+.music-track-playlist-options-add-to-existing-playlist-name-selected:hover {
+    
+} */
+
+
+.music-track-playlist-options-add-to-existing-playlist-submit-button {
+    padding: 2px ; 
+    border: 0.5px solid rgb(33, 53, 71) ;
+    border-radius: 8px ; 
+
+    cursor: pointer ; 
+}
+
+.music-track-playlist-options-add-to-existing-playlist-submit-button:hover {
+    
+}
+
+/* .music-track-playlist-options-add-to-existing-playlist-selections > div:hover {
+    cursor: pointer ;
+    background-color: rgb(202, 248, 248) ;
+} */
+
+
+
+.music-track-playlist-options-create-new-playlist-container {
+
+}
+
+.music-track-playlist-options-create-new-playlist-button {
+
+}
+
+.music-track-playlist-options-create-new-playlist-form {
+    margin-bottom: 15px ; 
+}
+
+.music-track-playlist-options-create-new-playlist-form-input {
+ 
+    background-color: rgb(239, 243, 244) ; 
+
+	transition-duration: 0.2s ; 
+	border: 0px ; 
+	border-radius: 9999px ; 
+
+	/* padding-left: 45px ;  */
+
+	padding-left: 10px ;
+	padding-right: 10px ; 
+
+	/* color: rgb(84, 87, 90) ;  */
+	color: #213547 ;
+
+    width: 300px ; 
+    height: 25px ;  
+
+
+}
+
+.music-track-playlist-options-create-new-playlist-form-input:focus {
+    outline: 0.5px solid rgb(130, 248, 248, 0.8) ; 
+}
+
+.music-track-playlist-options-create-new-playlist-submit-button {
+    padding: 2px ; 
+    border: 0.5px solid rgb(33, 53, 71) ;
+    border-radius: 8px ; 
+
+    cursor: pointer ; 
+
+    margin-top: -20px ; 
+    margin-bottom: 5px ; 
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .music-track-playlist-options-pop-up {
+
+    background-color: azure ;
+
+    width: 150px ; 
+    height: 160px ; 
+
+    position: fixed ;
+
+    right: 35px ; 
+
+    border-radius: 20px ;
+    z-index: 1 ;
+
+    display: flex ;
+    flex-direction: column ;
+    align-items: flex-end ;
+    justify-content: flex-start ;
+
+    padding: 10px ; 
+
+} */
+
+/* .music-track-playlist-options-pop-up-close-button {
+    color: white ; 
+    border-radius: 5px ;
+    padding: 3px ;
+    transition: 0.2s ; 
+    cursor: pointer ; 
+} */
+
+/* .music-track-playlist-options-pop-up-close-button:hover {
+    background-color: azure ; 
+} */
+
+/* .music-track-add-to-playlist-pop-up-add-to-playlist {
+}
+
+.music-track-add-to-playlist-pop-up-create-new-playlist {
+
+} */
+
+
+
+

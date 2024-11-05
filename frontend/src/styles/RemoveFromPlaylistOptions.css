@@ -1,0 +1,57 @@
+
+.music-track-remove-from-playlist-options {
+    display: flex ; 
+    flex-direction: column ; 
+    align-items: center ;
+    justify-content: flex-start ;
+    gap: 25px ;
+    max-width: 100% ; 
+    overflow: scroll ; 
+}
+
+.music-track-remove-from-playlist-confirmation-button {
+    padding: 3px ; 
+    border: 0.5px solid rgb(33, 53, 71) ;
+    border-radius: 5px ; 
+    transition: 0.2s ;
+    margin-top: 10px ; 
+}
+
+
+.music-track-remove-from-playlist-buttons {
+    display: flex ; 
+    flex-direction: row ; 
+    align-items: center ;
+    justify-content: center ;
+    gap: 50px ; 
+}
+
+
+.music-track-remove-from-playlist-yes,
+.music-track-remove-from-playlist-no,
+.music-track-remove-from-playlist-yes-selected,
+.music-track-remove-from-playlist-no-selected {
+    padding: 3px ; 
+    border: 0.5px solid rgb(33, 53, 71) ;
+    border-radius: 5px ; 
+    cursor: pointer ; 
+}
+
+.music-track-remove-from-playlist-yes-selected,
+.music-track-remove-from-playlist-no-selected {
+    background-color: rgb(202, 248, 248) ;
+}
+
+
+.music-track-remove-from-playlist-remove-button {
+    padding: 3px ; 
+    border: 0.5px solid rgb(33, 53, 71) ;
+    border-radius: 5px ; 
+    cursor: pointer ; 
+    margin-bottom: 10px ; 
+    background-color: rgb(255, 111, 111) ;
+}
+
+.music-track-remove-from-playlist-front-end-error {
+    color: red ; 
+}

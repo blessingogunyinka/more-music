@@ -1,0 +1,40 @@
+
+.search-form {
+	position: relative ; 
+}
+
+#search-input {
+	background-color: rgb(239, 243, 244) ; 
+	width: 340px ; 
+	height: 40px ;  
+	transition-duration: 0.2s ; 
+	border: 0px ; 
+	border-radius: 9999px ; 
+	padding-left: 20px ;
+	padding-right: 38px ; 
+	color: #213547 ;
+	font-size: 20px ; 
+}
+  
+#search-input::placeholder {
+	overflow: visible ;
+}
+
+#search-input:focus { 
+  outline: 0.5px solid rgb(130, 248, 248, 0.8) ;  
+}
+
+#search-input:hover {
+	
+}
+
+.search-form-search-icon {
+	fill: #213547 ;
+	position: absolute ; 
+	left: 363px ; 
+	top: 8px ; 
+}
+
+.search-form-search-icon:hover {
+	cursor: pointer ;
+}

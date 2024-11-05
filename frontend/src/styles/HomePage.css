@@ -1,0 +1,49 @@
+
+.home-page-center-stack-container {
+  height: 100vh ; 
+  display: flex ; 
+  flex-direction: column ; 
+  align-items: center ;
+  justify-content: flex-start ;
+  gap: 70px ; 
+}
+
+.home-page-login-signup-stack {
+  display: flex ; 
+  flex-direction: column ; 
+  align-items: center ;
+  justify-content: flex-start ;
+  position: absolute ; 
+  right: 5px ; 
+  top: 10px ;
+}
+
+.home-page-login-signup-stack p {
+  margin: 5px ; 
+  padding: 10px ; 
+  background-color: rgb(239, 243, 244) ;
+  border-radius: 15px ;
+  width: 60px ; 
+  text-align: center ;
+  color: #213547 ;
+}
+
+.home-page-login-signup-stack a {
+  text-decoration: none ; 
+}
+
+.home-page-login-signup-stack p:hover {
+  cursor: pointer ;
+  filter: drop-shadow(0 0 0.5em rgb(130, 248, 248, 0.8) ) ; 
+}
+
+.home-page-more-music-logo {
+  transition: filter 300ms ;
+  margin: 0px ; 
+  margin-top: 80px ; 
+}
+
+.home-page-more-music-logo:hover {
+  cursor: pointer ;
+  filter: drop-shadow(0 0 2em rgb(130, 248, 248, 0.8) ) ; 
+}

@@ -1,0 +1,7 @@
+body {
+  margin: 0;
+  font-family: 'proxima_nova_rgregular', 'Arial', 'Helvetica Neue', 'Helvetica', sans-serif ; 
+  -webkit-font-smoothing: antialiased ;
+  -moz-osx-font-smoothing: grayscale ;
+  color: #213547 ; 
+}

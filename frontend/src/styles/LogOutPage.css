@@ -1,0 +1,38 @@
+
+.logout-page-main-container {
+    background-color: white ;
+    height: 100vh ; 
+    display: flex ; 
+    flex-direction: column ; 
+    align-items: center ;
+    justify-content: flex-start ;
+    gap: 50px ; 
+}
+
+.logout-page-main-text {
+    margin-top: 100px ; 
+    font-size: 4cqw ;
+}
+
+.logout-page-main-text:after {
+    content: '.' ;
+    animation: logout-page-main-text 1s ease alternate infinite ;
+}
+
+@keyframes logout-page-main-text {
+    60%  { text-shadow: 0.35em 0 0 currentColor; }
+    100% { text-shadow: 0.35em 0 0 currentColor, 0.75em 0 0 currentColor; }
+}
+
+.logout-page-more-music-logo {
+    position: fixed ; 
+    height: 75px ; 
+    position: absolute ; 
+    left: 7.5px ; 
+    top: 8px ;
+    cursor: pointer ;
+}
+
+.logout-page-more-music-logo:hover {
+    filter: drop-shadow(0 0 1em rgb(130, 248, 248, 0.8) ) ;
+}

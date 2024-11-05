@@ -1,0 +1,231 @@
+
+
+.playlist-page-main-container {
+    display: flex ; 
+    flex-direction: column ; 
+    align-items: center ;
+    justify-content: flex-start ;
+    gap: 50px ; 
+}
+
+
+.playlist-page-playlist-info-container {
+    background-color: azure ; 
+    border-radius: 50px ;
+    display: flex ; 
+    flex-direction: row ; 
+    align-items: center ;
+    justify-content: flex-start ;
+    gap: 10px ; 
+    width: 70% ; 
+    min-height: 250px ; 
+    padding-right: 20px ; 
+    padding-left: 20px ; 
+    margin-top: 20px ; 
+    transition: 0.2s ; 
+}
+
+.playlist-page-playlist-info-container:hover {
+    background-color: rgb(202, 248, 248) ;
+    cursor: pointer ; 
+}
+
+.playlist-page-playlist-artwork {
+    height: 200px ; 
+    width: 200px ;  
+    margin-left: 45px ; 
+    border-radius: 20px ;
+    position: absolute ;  
+    top: 45px ; 
+}
+
+.playlist-page-playlist-info-title-container {
+    width: 100% ; 
+    height: 100% ;
+    display: flex ; 
+    flex-direction: column ;
+    align-items: flex-start ;
+    justify-content: center ;
+    gap: 12px ; 
+    margin-left: 40px ; 
+}
+
+.playlist-page-playlist-info-playlist-text {
+    background-color: rgb(255, 255, 255) ;
+    border-radius: 2px ;     
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    transition: 0.2s ; 
+    border-radius: 5px ;
+    border: 0.5px solid rgb(33, 53, 71) ; 
+}
+
+.playlist-page-playlist-info-playlist-text:hover {
+    background-color: rgb(244, 240, 240) ; 
+}
+
+.playlist-page-playlist-info-playlist-text span {
+    padding: 3px ; 
+    padding-top: 4px ; 
+    color: rgb(18, 18, 18) ; 
+}
+
+.playlist-page-playlist-info-details-container:hover {
+    text-decoration: underline ;
+}
+
+.playlist-page-playlist-info-name {
+    margin: 0px ;
+    -webkit-line-clamp: 2 ;
+    display: -webkit-box ; 
+    -webkit-box-orient: vertical ; 
+    line-height: normal ; 
+    overflow: hidden ; 
+    text-align: left ; 
+    width: 100% ; 
+    word-break: break-word ; 
+    font-size: 3cqw ;
+}
+
+.playlist-page-playlist-info-description {
+    -webkit-line-clamp: 1 ;
+    display: -webkit-box ; 
+    -webkit-box-orient: vertical ; 
+    line-height: normal ; 
+    overflow: hidden ; 
+    text-align: left ; 
+    width: 100% ; 
+    word-break: break-word ; 
+}
+
+.playlist-page-playlist-info-details-container {
+    display: flex ; 
+    flex-direction: row ; 
+    align-items: flex-start ;
+    justify-content: flex-start ;
+    gap: 5px ; 
+    flex-wrap: wrap ; 
+}
+
+.playlist-page-playlist-info-created-by {
+
+}
+
+.playlist-page-playlist-info-number-of-songs {
+
+}
+
+.playlist-page-playlist-info-total-length {
+
+}
+
+.playlist-page-track-list-items-container {
+    display: flex ; 
+    flex-direction: column ; 
+    align-items: center ;
+    justify-content: flex-start ;
+    gap: 5px ; 
+    min-width: 530px ;
+    width: 65% ;
+    height: 80% ; 
+    padding: 0px 5px 5px 5px ;
+    margin-bottom: 50px ; 
+}
+
+.playlist-page-track-list-items-header {
+    display: flex ; 
+    flex-direction: row ; 
+    align-items: center ; 
+    justify-content: flex-start ;
+    gap: 10px ; 
+    width: 100% ; 
+    flex-shrink: 0 ;
+    overflow: auto ; 
+    height: 35px ; 
+    position: sticky ; 
+    top: 0 ; 
+    z-index: 1 ; 
+}
+
+.playlist-page-track-list-items-header p {
+    margin: 0px ; 
+    overflow: hidden ; 
+    white-space: nowrap ; 
+    text-overflow: ellipsis ;
+}
+
+.playlist-page-track-list-item-number {
+    width: 5% ; 
+    text-align: center ;
+}
+
+.playlist-page-track-list-item-title {
+    width: 48% ;
+}
+
+.playlist-page-track-list-item-album-name {
+    width: 33% ;
+}
+
+.playlist-page-track-list-item-length {
+    width: 10% ;
+}
+
+.playlist-page-track-list-item-add-to-playlist {
+    width: 4% ; 
+}
+
+.playlist-page-track-list-items-container {
+
+}
+
+.playlist-page-track-list-items-header {
+    background-color: rgb(239, 243, 244) ; 
+}
+
+.playlist-page-more-music-logo {
+    height: 75px ; 
+    position: absolute ; 
+    left: 7.5px ; 
+    top: 8px ;
+    cursor: pointer ;
+}
+
+.playlist-page-more-music-logo:hover {
+    filter: drop-shadow(0 0 1em rgb(130, 248, 248, 0.8) ) ;
+}
+
+.playlist-page-nav-buttons-stack {
+    display: flex ; 
+    flex-direction: column ; 
+    align-items: center ;
+    justify-content: flex-start ;
+    position: absolute ; 
+    right: 5px ; 
+    top: 10px ;
+}
+
+.playlist-page-nav-buttons-stack p {
+    margin: 5px ; 
+    padding: 10px ; 
+    background-color: rgb(239, 243, 244) ;
+    border-radius: 15px ;
+    width: 60px ; 
+    text-align: center ;
+    color: #213547 ;
+}
+
+.playlist-page-nav-buttons-stack a {
+    text-decoration: none ;
+}
+
+.playlist-page-nav-buttons-stack p:hover {
+    cursor: pointer ;
+    filter: drop-shadow(0 0 0.5em rgb(130, 248, 248, 0.8) ) ; 
+}
+
+.playlist-page-error-message {
+    margin-top: 190px ;
+    text-align: center ;
+}
