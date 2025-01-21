@@ -101,7 +101,7 @@ function SignUpPage() {
                         {...register('password', { 
                             required: "Password is required.",
                             validate: (value) => {
-                                if (passwordStrength(value).id < 1) {
+                                if (passwordStrength(value).id < 2) {
                                     return "Password isn't strong enough."
                                 }
                                 return true ; 
