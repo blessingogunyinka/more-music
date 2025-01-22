@@ -29,7 +29,7 @@ function SearchPage() {
     useEffect(() => {
         async function getSearchData(urlSearchQuery: string) {
             try {
-                const response = await fetchResponse(`http://localhost:5000/api/search?q=${encodeURI(urlSearchQuery)}`, { method: "GET" })
+                const response = await fetchResponse(`${process.env.REACT_APP_BACKEND_URL}/api/search?q=${encodeURI(urlSearchQuery)}`, { method: "GET" })
                 const data = await response.json() ; 
                 setSearchData(data) ; 
             } catch(error) {

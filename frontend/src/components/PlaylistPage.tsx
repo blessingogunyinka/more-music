@@ -70,7 +70,7 @@ function PlaylistPage() {
     useEffect(() => {
         async function fetchPlaylist(playlistId: string) {
             try {
-                const response = await fetchResponse(`http://localhost:5000/api/playlists/${playlistId}`, { method: "GET" }) ; 
+                const response = await fetchResponse(`${process.env.REACT_APP_BACKEND_URL}/api/playlists/${playlistId}`, { method: "GET" }) ; 
                 const playlist = await response.json() ; 
                 setPlaylist(playlist) ; 
             } catch (error) {

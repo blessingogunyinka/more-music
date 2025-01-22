@@ -24,7 +24,7 @@ export default function RemoveFromPlaylistOptions({ displayProp, trackId, remove
 
             const playlistId = params.playlistId ; 
             
-            const response = await fetchResponse(`http://localhost:5000/api/playlists/${playlistId}`, { 
+            const response = await fetchResponse(`${process.env.REACT_APP_BACKEND_URL}/api/playlists/${playlistId}`, { 
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json"

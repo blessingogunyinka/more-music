@@ -62,7 +62,7 @@ export default function AddToPlaylistOptions({ displayProp, marginProp, trackDat
     useEffect(() => {
         async function getPlaylists() {
             try {                
-                const response = await fetchResponse("http://localhost:5000/api/playlists", { method: "GET" }) ; 
+                const response = await fetchResponse(`${process.env.REACT_APP_BACKEND_URL}/api/playlists`, { method: "GET" }) ; 
                 
                 const playlists = await response.json() ; 
                 
@@ -124,7 +124,7 @@ export default function AddToPlaylistOptions({ displayProp, marginProp, trackDat
             
             const { playlistName, playlistDescription } = data ; 
         
-            const response = await fetchResponse(`http://localhost:5000/api/playlists/`, { 
+            const response = await fetchResponse(`${process.env.REACT_APP_BACKEND_URL}/api/playlists/`, { 
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -220,7 +220,7 @@ export default function AddToPlaylistOptions({ displayProp, marginProp, trackDat
                 playlistId = selectedPlaylist._id ; 
             }
 
-            const response = await fetchResponse(`http://localhost:5000/api/playlists/${playlistId}`, { 
+            const response = await fetchResponse(`${process.env.REACT_APP_BACKEND_URL}/api/playlists/${playlistId}`, { 
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json"

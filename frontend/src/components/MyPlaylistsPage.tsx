@@ -62,7 +62,7 @@ function MyPlaylistsPage() {
             
             const { playlistName, playlistDescription } = data ; 
             
-            const response = await fetchResponse("http://localhost:5000/api/playlists/", {
+            const response = await fetchResponse(`${process.env.REACT_APP_BACKEND_URL}/api/playlists/`, {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json"
@@ -126,7 +126,7 @@ function MyPlaylistsPage() {
     useEffect(() => {
         async function getPlaylists() {
             try {
-                const response = await fetchResponse("http://localhost:5000/api/playlists", { method: "GET" }) ; 
+                const response = await fetchResponse(`${process.env.REACT_APP_BACKEND_URL}/api/playlists`, { method: "GET" }) ; 
                 const playlists = await response.json() ; 
                 setPlaylists(playlists)
             } catch (error) {

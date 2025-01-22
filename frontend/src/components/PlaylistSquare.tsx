@@ -67,7 +67,7 @@ function PlaylistSquare({ playlist }: PlaylistSquareProps) {
             const input = event.target as HTMLElement ; 
             const playlistId = input.id.replace("delete_", "") ;
 
-            await fetchResponse(`http://localhost:5000/api/playlists/${playlistId}`, { method: "DELETE" }) ; 
+            await fetchResponse(`${process.env.REACT_APP_BACKEND_URL}/api/playlists/${playlistId}`, { method: "DELETE" }) ; 
 
             setDeletePlaylist(true) ; 
         } catch (error) {
@@ -91,7 +91,7 @@ function PlaylistSquare({ playlist }: PlaylistSquareProps) {
     
             const { playlistName, playlistDescription } = data ;
             
-            const response = await fetchResponse(`http://localhost:5000/api/playlists/${playlistSquare._id}`, { 
+            const response = await fetchResponse(`${process.env.REACT_APP_BACKEND_URL}/api/playlists/${playlistSquare._id}`, { 
                 method: "PATCH",
                 headers: {
                     "Content-Type": "application/json"

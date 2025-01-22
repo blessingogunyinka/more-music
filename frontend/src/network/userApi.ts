@@ -2,7 +2,7 @@ import { fetchResponse } from "./fetchResponse" ;
 
 
 export async function getUserLoggedIn() {
-    const response = await fetchResponse("http://localhost:5000/api/users/", { 
+    const response = await fetchResponse(`${process.env.REACT_APP_BACKEND_URL}/api/users/`, { 
         method: "POST",
         credentials: "include",
         headers: {
@@ -21,7 +21,7 @@ export interface SignUpInfo {
 }
 
 export async function signUp(signUpInfo: SignUpInfo) {
-    const response = await fetchResponse("http://localhost:5000/api/users/signup", {
+    const response = await fetchResponse(`${process.env.REACT_APP_BACKEND_URL}/api/users/signup`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -39,7 +39,7 @@ export interface LogInInfo {
 
 
 export async function logIn(logInInfo: LogInInfo) {
-    const response = await fetchResponse("http://localhost:5000/api/users/login", {
+    const response = await fetchResponse(`${process.env.REACT_APP_BACKEND_URL}/api/users/login`, {
         method: "POST",
         headers: {
             "Content-Type": "application/json"
@@ -51,7 +51,7 @@ export async function logIn(logInInfo: LogInInfo) {
 
 
 export async function logOut() {
-    await fetchResponse("http://localhost:5000/api/users/logout", { 
+    await fetchResponse(`${process.env.REACT_APP_BACKEND_URL}/api/users/logout`, { 
         method: "POST",
         credentials: "include",
         headers: {

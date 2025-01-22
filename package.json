@@ -1,0 +1,16 @@
+{
+  "name": "more-music",
+  "version": "1.0.0",
+  "description": "A simple music playlist app built using the MERN stack with TypeScript. The app allows the user search for songs (iTunes Search API), listen to the preview of a song, add songs to or remove songs from your playlists, and manage your playlists.",
+  "main": "index.js",
+  "scripts": {
+    "install-server": "cd backend && npm install",
+    "start-server": "cd backend && npm start",
+    "install-frontend": "cd frontend && npm install",
+    "build-frontend": "cd frontend && npm run build",
+    "start-frontend": "cd frontend && npm run start"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

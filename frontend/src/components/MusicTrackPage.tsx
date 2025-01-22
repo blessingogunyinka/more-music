@@ -29,7 +29,7 @@ function MusicTrackPage() {
         async function fetchTrackData() {
             try {
                                 
-                const response = await fetchResponse(`http://localhost:5000/api/track/${trackId}`, { method: "GET" }) ; 
+                const response = await fetchResponse(`${process.env.REACT_APP_BACKEND_URL}/api/track/${trackId}`, { method: "GET" }) ; 
                 const data = await response.json() ; 
                 setTrackData(data) ; 
                                             
